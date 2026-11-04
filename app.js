@@ -6,10 +6,7 @@ const server = http.createServer((req, res) => {
         'Content-Type': 'text/html'
     });
 
-    res.end(`
-        <h1>Hello from Jenkins CI/CD!</h1>
-        <p>Docker deployment successful.</p>
-    `);
+    res.end("<h1>Jenkins Automatic CI/CD Trigger Successful!</h1>");
 });
 
 server.listen(3000, '0.0.0.0', () => {
